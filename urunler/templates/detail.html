@@ -1,0 +1,17 @@
+{% extends "index.html" %}
+{% load static %}
+{% block content %}
+
+<div class="container mt-5">
+    <div class="row border p-0">
+        <div class="col-4">
+            <img src=" {{urun.resim.url}}" width="370" height="300" alt="" />
+        </div>
+        <div class="col-8">
+            <h3>{{urun.isim}}</h3>
+            <p>{{urun.aciklama}}</p>
+            <p>{{urun.fiyat}}</p>
+        </div>
+    </div>
+</div>
+{% endblock content %}
